@@ -124,7 +124,7 @@ correct answer:{ground_truth}
 predicted answer: {answer}
 stars:"""
 
-gpt_fluency_prompt_sys = """You are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric."""
+gpt_fluency_prompt_sys = """You are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information."""
 gpt_fluency_prompt_user = """
 Fluency measures the quality of individual sentences in the answer, and whether they are well-written and grammatically correct. Consider the quality of individual sentences when evaluating fluency. Given the question and answer, score the fluency of the answer between one to five stars using the following rating scale:
 One star: the answer completely lacks fluency
